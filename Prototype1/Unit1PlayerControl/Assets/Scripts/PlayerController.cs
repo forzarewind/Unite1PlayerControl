@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f;
-    public float turnSpeed;
+    public float turnSpeed = 100F;
     public InputAction MoveAction;
     public Vector2 moveInput;
    
@@ -19,7 +19,9 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = MoveAction.ReadValue<Vector2>();
         //We'll move vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * moveInput.y);
+
+        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * moveInput.x);
     }
+           
 }
