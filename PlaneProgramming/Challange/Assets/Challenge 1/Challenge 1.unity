@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0232a093d67e448b7a80e945acf8e227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 14.7
+  speed: 14
   rotationSpeed: 100
   verticalInput: 0
   MoveAction:
@@ -1092,7 +1092,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: left
       m_Id: 87ff9946-cb2a-45ae-80c9-6b86aeddbbf0
-      m_Path: <Keyboard>/upArrow
+      m_Path: <Keyboard>/downArrow
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -1100,7 +1100,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: right
       m_Id: 9bbe959d-1c9b-4f91-9de5-ae6e6cfdda6b
-      m_Path: <Keyboard>/downArrow
+      m_Path: <Keyboard>/upArrow
       m_Interactions: 
       m_Processors: 
       m_Groups: 
